@@ -3,6 +3,9 @@ name: Mirror url
 on:
   push:
 
+  schedule:
+    - cron: "0 0 * * *"
+    
 jobs:
   mirror:
     runs-on: ubuntu-latest
